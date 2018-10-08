@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.alibaba:hessian-lite:2.6.2@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.alibaba/hessian-lite/2.6.2/cb3d99eaedc1bde1cce947aef868d38bfb26659/hessian-lite-2.6.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.alibaba/hessian-lite/2.6.2/8f187cb1ed09aed23d99b2ac29619db111ee6d11/hessian-lite-2.6.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

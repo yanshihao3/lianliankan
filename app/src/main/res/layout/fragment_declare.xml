@@ -1,0 +1,269 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mh.fragment.DeclareFragment">
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@mipmap/dialog_declare"
+        android:orientation="vertical"
+        android:paddingBottom="30dp">
+        <LinearLayout
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="90dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/declare_play"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:src="@mipmap/declare_play_selcet_on"
+                android:layout_height="wrap_content" />
+
+            <ImageButton
+                android:id="@+id/declare_prop"
+                android:background="@null"
+                android:src="@mipmap/declare_prop_selcet_on"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:id="@+id/declare_play_ll"
+            android:orientation="vertical"
+            android:paddingBottom="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="经典玩法"
+                android:textColor="#3a230a"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_gravity="center_horizontal"
+                android:text="在有限的时间内，点击可连接的两个相同图案，它们就会自动消失，消完全部图案即获得胜利!"
+                android:textColor="#3a230a"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="无限玩法"
+                android:textColor="#3a230a"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="5dp"
+                android:text="在1分钟内，点击可连接的两个相同图案完成消除，消除的图案越多奖励越丰厚！"
+                android:textColor="#3a230a"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_marginTop="10dp"
+            android:id="@+id/declare_prop_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/alerlog_background"
+                android:elevation="5dp"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/alerlog_query"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/iv_query" />
+
+                <TextView
+                    android:id="@+id/alerlgo_query_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/alerlog_query"
+                    android:text="快速提示"
+                    android:textColor="#b73a0a"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/alerlgo_query_title"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/alerlog_query"
+                    android:text="立即提示可以消除的图案"
+                    android:textColor="#cca664"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/alerlog_background"
+                android:elevation="5dp"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/alerlog_refersh"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/iv_refersh" />
+
+                <TextView
+                    android:id="@+id/alerlog_refersh_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/alerlog_refersh"
+                    android:text="重置"
+                    android:textColor="#b73a0a"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/alerlog_refersh_title"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/alerlog_refersh"
+                    android:text="重新整理图案的摆放位置"
+                    android:textColor="#cca664"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/alerlog_background"
+                android:elevation="5dp"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/alerlog_bomb"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/iv_bomb" />
+
+                <TextView
+                    android:id="@+id/alerlog_bomb_tilte"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/alerlog_bomb"
+                    android:text="炸弹"
+                    android:textColor="#b73a0a"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/alerlog_bomb_tilte"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/alerlog_bomb"
+                    android:text="随机消除一对图案"
+                    android:textColor="#cca664"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/alerlog_background"
+                android:elevation="5dp"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/alerlog_stop"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/iv_stop" />
+
+                <TextView
+                    android:id="@+id/alerlog_stop_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/alerlog_stop"
+                    android:text="时间冻结"
+                    android:textColor="#b73a0a"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/alerlog_stop_title"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/alerlog_stop"
+                    android:text="时间冻结3秒"
+                    android:textColor="#cca664"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/declare_btn_play"
+        android:layout_below="@id/ll"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-30dp"
+        android:src="@mipmap/declare_play"/>
+</RelativeLayout>

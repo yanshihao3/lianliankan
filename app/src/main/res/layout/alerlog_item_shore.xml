@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@mipmap/alerlog_shore"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/alerlog_background"
+            android:elevation="5dp"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/alerlog_query"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/iv_query" />
+
+            <ImageView
+                android:layout_toRightOf="@id/alerlog_query"
+                android:layout_width="50dp"
+                android:layout_centerVertical="true"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:src="@mipmap/alerlog_money"/>
+            <LinearLayout
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="#d6a770"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/shore_query_cut"
+                    android:textColor="#6c3b02"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=" - "
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/shore_query_number"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="0"
+                    android:textColor="#6c3b02"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/shore_query_add"
+                    android:textColor="#6c3b02"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=" + "
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/alerlog_background"
+            android:elevation="5dp"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/alerlog_refersh"
+                android:layout_centerVertical="true"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/iv_refersh" />
+            <ImageView
+                android:layout_toRightOf="@id/alerlog_refersh"
+                android:layout_width="50dp"
+                android:layout_centerVertical="true"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:src="@mipmap/alerlog_money"/>
+            <LinearLayout
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="#d6a770"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/shore_refresh_cut"
+                    android:textColor="#6c3b02"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=" - "
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:gravity="center"
+                    android:id="@+id/shore_refresh_number"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="0"
+                    android:textColor="#6c3b02"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/shore_refresh_add"
+                    android:textColor="#6c3b02"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=" + "
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/alerlog_background"
+            android:elevation="5dp"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/alerlog_bomb"
+                android:layout_centerVertical="true"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/iv_bomb" />
+            <ImageView
+                android:layout_toRightOf="@id/alerlog_bomb"
+                android:layout_width="50dp"
+                android:layout_centerVertical="true"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:src="@mipmap/alerlog_money"/>
+            <LinearLayout
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="#d6a770"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/shore_bomb_cut"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=" - "
+                    android:textColor="#6c3b02"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/shore_bomb_number"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="0"
+                    android:textColor="#6c3b02"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/shore_bomb_add"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=" + "
+                    android:textColor="#6c3b02"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/alerlog_background"
+            android:elevation="5dp"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/alerlog_stop"
+                android:layout_centerVertical="true"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/iv_stop" />
+            <ImageView
+                android:layout_toRightOf="@id/alerlog_stop"
+                android:layout_width="50dp"
+                android:layout_centerVertical="true"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:src="@mipmap/alerlog_money"/>
+            <LinearLayout
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="#d6a770"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/shore_freeze_cut"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=" - "
+                    android:textColor="#6c3b02"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/shore_freeze_number"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="0"
+                    android:textColor="#6c3b02"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/shore_freeze_add"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=" + "
+                    android:textColor="#6c3b02"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/shore_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/alerlog_shoping" />
+    </LinearLayout>
+</RelativeLayout>

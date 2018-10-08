@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.alibaba:dubbo-serialization-fastjson:2.6.2@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.alibaba/dubbo-serialization-fastjson/2.6.2/394429fb19e4552a69ed9d96eeb645b6e55a6a9f/dubbo-serialization-fastjson-2.6.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.alibaba/dubbo-serialization-fastjson/2.6.2/5fdab6c5dc6d600cc16a0a2884436cf48b2e20ee/dubbo-serialization-fastjson-2.6.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

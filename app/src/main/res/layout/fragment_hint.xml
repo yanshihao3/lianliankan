@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="20dp"
+    android:background="@drawable/hint_background"
+    >
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="提示"
+        android:textColor="#C1261E"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:id="@+id/fragment_hint_title"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textColor="#044398"
+        android:text="您Hi币不足\n请前往充值"/>
+    <ImageView
+        android:id="@+id/fragment_hint_image"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:src="@mipmap/iv_break_game"/>
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/fragment_hint_pay"
+        android:layout_width="200dp"
+        android:src="@mipmap/pay_pay"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>

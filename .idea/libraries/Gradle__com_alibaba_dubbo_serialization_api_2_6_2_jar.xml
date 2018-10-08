@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.alibaba:dubbo-serialization-api:2.6.2@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.alibaba/dubbo-serialization-api/2.6.2/9b9715d92a631a0cc87f97618f59bc42678c9dc4/dubbo-serialization-api-2.6.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.alibaba/dubbo-serialization-api/2.6.2/e7aad1c1991a513d68a9a2cc73a66d07c34f2423/dubbo-serialization-api-2.6.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

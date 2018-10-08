@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/home_background"
+    tools:context="com.mh.match.HomeActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:src="@mipmap/home_haixin" />
+
+    <ImageView
+        android:id="@+id/home_type_classics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/home_type_2" />
+
+    <ImageView
+        android:id="@+id/home_type_infinite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/home_type_classics"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@mipmap/home_type_1" />
+
+    <ImageView
+        android:id="@+id/home_store"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/home_type_infinite"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:src="@mipmap/home_store" />
+
+    <ImageView
+        android:layout_toLeftOf="@id/home_store"
+        android:layout_marginRight="20dp"
+        android:id="@+id/home_sound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/home_type_infinite"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:src="@mipmap/home_sound"
+        android:layout_toStartOf="@id/home_store"
+        android:layout_marginEnd="20dp" />
+
+    <ImageView
+        android:layout_toEndOf="@id/home_store"
+        android:layout_marginStart="20dp"
+        android:id="@+id/home_my"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/home_type_infinite"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:src="@mipmap/home_my"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/home_store" />
+</RelativeLayout>

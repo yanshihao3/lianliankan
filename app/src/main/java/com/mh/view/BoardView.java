@@ -20,11 +20,11 @@ public class BoardView extends View {
 	/**
 	 * x轴方向上的图标数
 	 */
-	protected static final int xCount = 8;
+	protected static final int xCount = 6;
 	/**
 	 * y轴方向上的图标数
 	 */
-	protected static final int yCount = 8;
+	protected static final int yCount = 6;
 	/**
 	 * map 连连看游戏棋盘
 	 */
@@ -44,7 +44,7 @@ public class BoardView extends View {
 	/**
 	 * iconCounts 图标的数目
 	 */
-	protected int iconCounts = 64;
+	protected int iconCounts = 36;
 	/**
 	 * 界面上整个图片和View边界的空隙
 	 */
@@ -185,8 +185,9 @@ public class BoardView extends View {
 	 */
 	private boolean isSelected(int x, int y) {
 		for(Point p: selected){
-			if(x == p.x && y == p.y)
+			if(x == p.x && y == p.y) {
 				return true;
+			}
 		}
 		return false;
 	}
@@ -368,8 +369,9 @@ public class BoardView extends View {
 	 */
 	protected boolean twoCornerLink(int x1, int y1, int x2, int y2) {
 		for(int i = -1; i <= xCount ; i++) {
-			if(i == x1 || i == x2)
+			if(i == x1 || i == x2) {
 				continue;
+			}
 			if(i == -1 || i == xCount) {
 				if(hLink(i, x1, y1) && hLink(i, x2, y2)) {
 					flexPoint1 = new Point(i, y1);
@@ -387,8 +389,9 @@ public class BoardView extends View {
 		}
 
 		for(int i = -1; i <= xCount ; i++) {
-			if(i == y1 || i == y2)
+			if(i == y1 || i == y2) {
 				continue;
+			}
 			if(i == -1 || i == xCount) {
 				if(vLink(x1, i, y1) && vLink(x2, i, y2)) {
 					flexPoint1 = new Point(x1, i);
@@ -474,9 +477,9 @@ public class BoardView extends View {
 	protected boolean search() {
 		for (int i = 0; i < xCount; i++) {
 			for (int j = 0; j < yCount; j++) {
-				if (map[i][j] == BLANK)
+				if (map[i][j] == BLANK) {
 					continue;
-				else {
+				} else {
 					for (int k = j + 1; k < yCount; k++) {
 						if(map[i][k] != BLANK) {
 							Point p1 = new Point(j, i);
